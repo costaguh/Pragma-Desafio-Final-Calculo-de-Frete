@@ -262,3 +262,9 @@ Iremos adicionar um **Produto** ao **Pedido**, deve conter os seguintes itens:
 O programa deverá preencher os campos de **Freight** com o **FRETE 1** (no nome automático Salesforce F-0034, lembrando que este numeração muda em cada Org), pois esse é o único que se encaixa na localização da **Conta** da **Achieve Organic** deverá ser preenchido também o campo **Total Freight** com o valor de R$1300,00.
 
 ![enter image description here](https://s3.sa-east-1.amazonaws.com/static.pragma.school/images/V02C04J04T10S01I03.png)
+
+## Coloque em Prática!
+
+Nesta etapa iremos testar se seu código atende aos requisitos mínimos para realização de um teste unitário, que prevê uma
+associação simples de Frete ao Pedido. Antes de apertar o botão, confira se os testes manuais mencionados acima estão de
+acordo com o esperado.
