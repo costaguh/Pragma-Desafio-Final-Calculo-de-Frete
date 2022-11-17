@@ -235,3 +235,30 @@ Por último, iremos ranquear os centros de distribuição de acordo com os valor
 distribuição com o **menor valor** será vinculado à ordem.
 
 ![enter image description here](https://s3.sa-east-1.amazonaws.com/static.pragma.school/images/V02C04J04T09S03I02.png)
+#
+# Desafio Final: Teste Unitário
+
+# Teste Unitário de Trigger
+
+## Associação de Frete ao inserir um Produto.
+
+Antes de começarmos a sequência de teste é importante incluirmos todos os registros de **Frete** e **Pedidos**, isso nos auxiliará a visualizar melhor os testes e na obtenção dos resultados corretos.
+
+Crie uma **Conta** com nome **Achieve Organic** com o endereço para **Curitiba - PR, CEP: 93542-231** (os registros de Estado e Cidade devem ser previamente criados nos seus respectivos objetos) crie um **Contrato** associado a essa **Conta**.
+
+Ao fazer o teste unitário, não conseguimos inserir um **Pedido** com **Produtos** instantaneamente. Portanto, vamos criar um
+**Pedido** e logo adicionar itens a ele.
+
+Para conseguir que o melhor **Frete** do **Pedido** seja associado a ele, deve no mínimo cumprir os requisitos de compatibilidade de **Frete**. Para isso, criamos o **Centro de Distribuição Bulk Demand*** **(complete o campo Estado com Paraná), e associamos dois** Fretes* *.
+
+![enter image description here](https://s3.sa-east-1.amazonaws.com/static.pragma.school/images/V02C04J04T10S01I01.png)
+
+![enter image description here](https://s3.sa-east-1.amazonaws.com/static.pragma.school/images/V02C04J04T10S01I02.png)
+
+Iremos adicionar um **Produto** ao **Pedido**, deve conter os seguintes itens:
+
+![enter image description here](https://user-images.githubusercontent.com/32878844/202541609-69c020ae-e071-4e87-bd45-7b9defe0d5c3.jpg)
+
+O programa deverá preencher os campos de **Freight** com o **FRETE 1** (no nome automático Salesforce F-0034, lembrando que este numeração muda em cada Org), pois esse é o único que se encaixa na localização da **Conta** da **Achieve Organic** deverá ser preenchido também o campo **Total Freight** com o valor de R$1300,00.
+
+![enter image description here](https://s3.sa-east-1.amazonaws.com/static.pragma.school/images/V02C04J04T10S01I03.png)
